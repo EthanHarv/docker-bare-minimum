@@ -1,0 +1,7 @@
+This file should be served on port 8080 for "development" and 5000 for "deployment."
+
+The command that should be run is:
+
+```sh
+python -m http.server $PORT
+```

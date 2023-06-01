@@ -1,0 +1,12 @@
+# DEVELOPMENT
+
+version: "1.0"
+
+services:
+  node:
+    container_name: python-testserver
+    build:
+      context: ./bare-minimum
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8080:8080"
