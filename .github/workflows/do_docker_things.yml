@@ -22,7 +22,8 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: ./bare-minimum
+        file: ./bare-minimum/Dockerfile.prod
         push: true
         tags: |
           ehtanharv/docker-bare-minimum:${{ github.sha }}
