@@ -25,5 +25,5 @@ jobs:
         context: .
         push: true
         tags: |
-          ethanharv/${{ github.repository }}:${{ github.sha }}
-          ethanharv/${{ github.repository }}:latest
+          ehtanharv/docker-bare-minimum:${{ github.sha }}
+          ehtanharv/docker-bare-minimum:latest
