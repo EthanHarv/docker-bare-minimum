@@ -20,11 +20,6 @@ jobs:
         password: ${{ secrets.GHCR_TOKEN }}
 
     - name: Build and push
-      uses: docker/build-push-action@v2
-      with:
-        context: ./bare-minimum
-        file: ./bare-minimum/Dockerfile.prod
-        push: true
-        tags: |
-          ethanharv/docker-bare-minimum:${{ github.sha }}
-          ethanharv/docker-bare-minimum:latest
+      run: |
+        docker build ./bare-minimum/Dockerfile.prod --tag ghcr.io/${{ github.actor }}/docker-bare-minimum:latest
+        docker push ghcr.io/${{ github.actor }}/docker-bare-minimum:latest
