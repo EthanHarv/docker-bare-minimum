@@ -21,5 +21,5 @@ jobs:
 
     - name: Build and push
       run: |
-        docker build ./bare-minimum/Dockerfile.prod --tag ghcr.io/ethanharv/docker-bare-minimum:latest
+        docker build ./bare-minimum/ -f ./bare-minimum/Dockerfile.prod --tag ghcr.io/ethanharv/docker-bare-minimum:latest
         docker push ghcr.io/ethanharv/docker-bare-minimum:latest
