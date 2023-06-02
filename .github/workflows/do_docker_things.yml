@@ -26,5 +26,5 @@ jobs:
         file: ./bare-minimum/Dockerfile.prod
         push: true
         tags: |
-          ehtanharv/docker-bare-minimum:${{ github.sha }}
-          ehtanharv/docker-bare-minimum:latest
+          ethanharv/docker-bare-minimum:${{ github.sha }}
+          ethanharv/docker-bare-minimum:latest
