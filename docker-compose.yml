@@ -5,7 +5,7 @@ version: "3"
 services:
   node:
     container_name: python-testserver
-    image: gchr.io/EthanHarv/docker-bare-minimum:latest
+    image: ghcr.io/ethanharv/docker-bare-minimum:latest
     restart: always
     ports:
       - "5000:5000"
